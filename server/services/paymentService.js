@@ -4,7 +4,7 @@ import User from '../models/User.js';
 import Transaction from '../models/Transaction.js';
 import Wallet from '../models/Wallet.js';
 import 'dotenv/config';
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, { 
+const stripe = new Stripe(process.env.VITE_SRIPE_PUBLIC_KEY, { 
   apiVersion: '2024-04-10' 
 });
 
