@@ -22,9 +22,13 @@ function Home() {
       tickets: [{ _id: 't1', name: 'General Admission', price: 89.99, quantity: 1000, description: 'Standard entry ticket with access to all main stages' }],
       category: 'Music',
       organizer: {
-        _id: 'org1',
+        id: 'org1',
         name: 'EventHub Productions',
-        email: 'contact@eventhub.com'
+        email: 'contact@eventhub.com',
+        role: 'organizer',
+        isVerified: true,
+        accessToken: '',
+        isBlocked: false
       },
       status: 'upcoming',
       cordinates: { lat: 40.7829, lng: -73.9654 },
@@ -45,9 +49,13 @@ function Home() {
       tickets: [{ _id: 't2', name: 'VIP Pass', price: 199.99, quantity: 200, description: 'Premium access with exclusive benefits' }],
       category: 'Food',
       organizer: {
-        _id: 'org2',
+        id: 'org2',
         name: 'Culinary Events Co.',
-        email: 'events@culinary.com'
+        email: 'events@culinary.com',
+        role: 'organizer',
+        isVerified: true,
+        accessToken: '',
+        isBlocked: false
       },
       status: 'upcoming',
       cordinates: { lat: 40.7128, lng: -74.0060 },
@@ -68,9 +76,13 @@ function Home() {
       tickets: [{ _id: 't3', name: 'Early Bird', price: 299.99, quantity: 500, description: 'Early bird ticket with special pricing' }],
       category: 'Technology',
       organizer: {
-        _id: 'org3',
+        id: 'org3',
         name: 'Tech Events Inc',
-        email: 'info@techevents.com'
+        email: 'info@techevents.com',
+        role: 'organizer',
+        isVerified: true,
+        accessToken: '',
+        isBlocked: false
       },
       status: 'upcoming',
       cordinates: { lat: 37.4484, lng: -122.1607 },
